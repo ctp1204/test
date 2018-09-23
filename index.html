@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page 1 - Cường TânPhú</title>
+</head>
+<body>
+	<div class="main">
+		<!--Header-->
+		<header>
+			<div class="container">
+				<div id="title">
+					<p>HOFMANN</p>
+				</div>
+				<nav id="menu">
+					<ul>
+						<li><a href="#">MISSION</a></li>
+						<li><a href="#">SERVICES</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><button id="takeatour">TAKE A TOUR</button></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--End header-->
+		<!--Show Case-->
+		<div id="showcase">
+			<div class="container">
+				<h1>Choosing The Right Boutique Hotel For You</h1>
+				<p>How To Fly A Private Jet On Your Next Trip</p>
+				<form>
+					<input class="email" type="text" name="" placeholder="Your Email">
+					<button class="findemail">FIND NOW</button>
+				</form>
+				<div class="image-icon">
+					<img src="css/plane-icon.png">
+					<img src="css/case-icon.png">
+					<img src="css/wallet-icon.png">
+				</div>
+			</div>
+		</div>
+		<!--End Show Case-->
+		<div class="content">
+			<!--Our Team-->
+			<div class="boxes">
+				<div class="container">
+					<h1>Our Team</h1>
+					<div class="box">
+						<img src="image/person (1).png">
+						<div id="des">
+							<h3>Craig Todd CEO</h3>
+							<p>Like the mojority of sales people, I visit a huge number of clients and prosepects every month.</p>
+						</div>
+					</div>
+					<div class="box">
+						<img src="image/person (1).png">
+						<div id="des">
+							<h3>Craig Todd CEO</h3>
+							<p>Like the mojority of sales people, I visit a huge number of clients and prosepects every month.</p>
+						</div>
+					</div>
+					<div class="box">
+						<img src="image/person (1).png">
+						<div id="des">
+							<h3>Craig Todd CEO</h3>
+							<p>Like the mojority of sales people, I visit a huge number of clients and prosepects every month.</p>
+						</div>
+					</div>
+					<div class="box">
+						<img src="image/person (1).png">
+						<div id="des">
+							<h3>Craig Todd CEO</h3>
+							<p>Like the mojority of sales people, I visit a huge number of clients and prosepects every month.</p>
+						</div>
+					</div>
+					<div class="box">
+						<img src="image/person (1).png">
+						<div id="des">
+							<h3>Craig Todd CEO</h3>
+							<p>Like the mojority of sales people, I visit a huge number of clients and prosepects every month.</p>
+						</div>
+					</div>
+					<div class="box">
+						<img src="image/person (1).png">
+						<div id="des">
+							<h3>Craig Todd CEO</h3>
+							<p>Like the mojority of sales people, I visit a huge number of clients and prosepects every month.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End Our Team-->
+			<!--Choose Your Plan-->
+			<div class="choose">
+				<div class="container">
+					<h1>Choose Your Plan</h1>
+					<div class="boxcho">
+						<div class="boxsliver">
+							<h3>SILVER</h3>
+							<h1>$ 49</h1>
+							<h1>YEAR</h1>
+							<p>Personal Account</br>
+								25GB Discspace</br>
+								50 Uploads per day</p>
+							<button id="pur">PURCHASE</button>
+						</div>
+						<div class="boxgold">
+							<h3>GOLD</h3>
+							<h1>$ 99</h1>
+							<h1>YEAR</h1>
+							<p>Personal Account</br>
+								50GB Discspace</br>
+								500 Uploads per day</p>
+							<button id="pur">PURCHASE</button>
+						</div>
+						<div class="boxplat">
+							<h3>PLATINUM</h3>
+							<h1>$ 299</h1>
+							<h1>YEAR</h1>
+							<p>Personal Account</br>
+								500GB Discspace</br>
+								Unlimited Uploads per day</p>
+							<button id="pur">PURCHASE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End Choose Your Plan-->
+			<!--Slider-->
+			<!-- <div class="wrap">
+					<div id="arrow-left" class="arrow"></div>
+					<div id="slider">
+						<div class="slider slider1">
+							<div class="slider-content">
+								<h1>Ida Stephens - Noir Project</h1>
+								<p></p>
+							</div>
+						</div>
+						<div class="slider slider2">
+							<div class="slider-content">
+								<span>Image Two</span>
+							</div>
+						</div>
+						<div class="slider slider3">
+							<div class="slider-content">
+								<span>Image Three</span>
+							</div>
+						</div>
+					</div>
+					<div id="arrow-right" class="arrow"></div>
+
+			</div>
+			<script type="text/javascript">
+				let sliderImages = document.querySelectorAll('.slider'),
+					arrowRight = document.querySelector('#arrow-left'),
+					arrowLeft = document.querySelector('#arrow-right'),
+					current = 0;
+				// clear all image
+				function reset() {
+					for (let i = 0; i < sliderImages.length; i++) {
+						sliderImages[i].style.display = 'none';
+					}
+				}
+				// init slider
+				function startSlider(){
+					reset();
+					sliderImages[0].style.display = 'block';
+				}
+				//show prev
+				function sliderLeft(){
+					reset();
+					sliderImages[current-1].style.display = 'block';
+					current--;
+				}
+
+				// show next
+				function sliderRight(){
+					reset();
+					sliderImages[current +1 ].style.display = 'block';
+					current++;
+				}
+				// left arrow click
+				arrowLeft.addEventListener('click',function(){
+					if(current === 0){
+						current = sliderImages.length;
+					}
+					sliderLeft();
+				});
+				//right arrow click
+				arrowRight.addEventListener('click',function(){
+					if(current === sliderImages.length - 1){
+						current = -1
+					}
+					sliderRight();
+				});
+				startSlider();
+			</script> -->
+			<!--End Slider-->
+			<!--Advantages-->
+			<div class="adv">
+				<div class="container">
+					<h1>Advantages</h1>
+					<h3>One more thing! Any time we start something new it is exciting and we are very motivated and committed</h3>
+					<div class="boxcho">
+						<div class="boxsecure">
+							<h3>SECURE</h3>
+							<img src="image/safe.png">
+							<h3>YOUR DATA IS PROTECTED</h3>
+							<p>No matter how far along you are in your sophistication as an amateur astronomer</p>
+							<button id="pur">FIND MORE</button>
+						</div>
+						<div class="boxsecure">
+							<h3>SECURE</h3>
+							<img src="image/safe.png">
+							<h3>YOUR DATA IS PROTECTED</h3>
+							<p>No matter how far along you are in your sophistication as an amateur astronomer</p>
+							<button id="pur">FIND MORE</button>
+						</div>
+						<div class="boxsecure">
+							<h3>SECURE</h3>
+							<img src="image/safe.png">
+							<h3>YOUR DATA IS PROTECTED</h3>
+							<p>No matter how far along you are in your sophistication as an amateur astronomer</p>
+							<button id="pur">FIND MORE</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--End Avantages-->
+			<!--Show Images-->
+			<div class="imgage">
+				<div class="container">
+					<h1>Plances</h1>
+					<div class="title">
+						<h3>SAN FRANCISCO</h3>
+						<h3>SOUTH LILIANA</h3>
+						<h3>BLICKVEW</h3>
+						<h3>NEW RAVEN</h3>
+					</div>
+					
+					<div class="w3-row-padding">
+					  <div class="w3-container w3-third">
+					    <img src="image/Card1.png" style="width:100%;cursor:pointer" 
+					    onclick="onClick(this)" class="w3-hover-opacity">
+					  </div>
+					  <div class="w3-container w3-third">
+					    <img src="image/Card2.png" style="width:100%;cursor:pointer" 
+					    onclick="onClick(this)" class="w3-hover-opacity">
+					  </div>
+					  <div class="w3-container w3-third">
+					    <img src="image/Card3.png" style="width:100%;cursor:pointer" 
+					    onclick="onClick(this)" class="w3-hover-opacity">
+					  </div>
+					  <div class="w3-container w3-third">
+					    <img src="image/Card4.png" style="width:100%;cursor:pointer" 
+					    onclick="onClick(this)" class="w3-hover-opacity">
+					  </div>
+					  <div class="w3-container w3-third">
+					    <img src="image/Card5.png" style="width:100%;cursor:pointer" 
+					    onclick="onClick(this)" class="w3-hover-opacity">
+					  </div>
+					  <div class="w3-container w3-third">
+					    <img src="image/Card6.png" style="width:100%;cursor:pointer" 
+					    onclick="onClick(this)" class="w3-hover-opacity">
+					  </div>
+					</div>
+					<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+					  	<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					  	<div class="w3-modal-content w3-animate-zoom">
+					   		<img id="img01">
+					  	</div>
+					</div>
+				</div>
+			</div>
+			<!--End Show Images-->
+		</div>
+		<div class="footer">
+			footer
+		</div>
+	</div>
+
+	<script language="javascript" src="js/images.js"></script>
+</body>
+</html>
